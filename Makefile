@@ -5,7 +5,10 @@ vpath %.swift Sources
 	    -Xswiftc -F$$PWD/Sources \
 	    -Xswiftc -F/System/Library/PrivateFrameworks \
 	    -Xswiftc -framework -Xswiftc DisplayServices \
+	    -Xswiftc -framework -Xswiftc SkyLight \
 	    -Xswiftc -framework -Xswiftc CoreDisplay \
+	    -Xswiftc -framework -Xswiftc CoreBrightness \
+	    -Xswiftc -framework -Xswiftc BrightnessControl \
 	    -Xswiftc -framework -Xswiftc OSD \
 	    -Xswiftc -framework -Xswiftc MonitorPanel \
 	    -Xswiftc -import-objc-header -Xswiftc Sources/Bridging-Header.h
@@ -16,7 +19,10 @@ vpath %.swift Sources
 	    -Xswiftc -F$$PWD/Sources \
 	    -Xswiftc -F/System/Library/PrivateFrameworks \
 	    -Xswiftc -framework -Xswiftc DisplayServices \
+	    -Xswiftc -framework -Xswiftc SkyLight \
 	    -Xswiftc -framework -Xswiftc CoreDisplay \
+	    -Xswiftc -framework -Xswiftc CoreBrightness \
+	    -Xswiftc -framework -Xswiftc BrightnessControl \
 	    -Xswiftc -framework -Xswiftc OSD \
 	    -Xswiftc -framework -Xswiftc MonitorPanel \
 	    -Xswiftc -import-objc-header -Xswiftc Sources/Bridging-Header.h
@@ -28,7 +34,10 @@ vpath %.swift Sources
 	    -Xswiftc -F$$PWD/Sources \
 	    -Xswiftc -F/System/Library/PrivateFrameworks \
 	    -Xswiftc -framework -Xswiftc DisplayServices \
+	    -Xswiftc -framework -Xswiftc SkyLight \
 	    -Xswiftc -framework -Xswiftc CoreDisplay \
+	    -Xswiftc -framework -Xswiftc CoreBrightness \
+	    -Xswiftc -framework -Xswiftc BrightnessControl \
 	    -Xswiftc -framework -Xswiftc OSD \
 	    -Xswiftc -framework -Xswiftc MonitorPanel \
 	    -Xswiftc -import-objc-header -Xswiftc Sources/Bridging-Header.h
@@ -39,7 +48,10 @@ vpath %.swift Sources
 	    -Xswiftc -F$$PWD/Sources \
 	    -Xswiftc -F/System/Library/PrivateFrameworks \
 	    -Xswiftc -framework -Xswiftc DisplayServices \
+	    -Xswiftc -framework -Xswiftc SkyLight \
 	    -Xswiftc -framework -Xswiftc CoreDisplay \
+	    -Xswiftc -framework -Xswiftc CoreBrightness \
+	    -Xswiftc -framework -Xswiftc BrightnessControl \
 	    -Xswiftc -framework -Xswiftc OSD \
 	    -Xswiftc -framework -Xswiftc MonitorPanel \
 	    -Xswiftc -import-objc-header -Xswiftc Sources/Bridging-Header.h

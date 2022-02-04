@@ -2,6 +2,18 @@ import class Foundation.Bundle
 import XCTest
 
 final class monitorpanelTests: XCTestCase {
+    /// Returns path to the built products directory.
+    var productsDirectory: URL {
+        #if os(macOS)
+            for bundle in Bundle.allBundles where bundle.bundlePath.hasSuffix(".xctest") {
+                return bundle.bundleURL.deletingLastPathComponent()
+            }
+            fatalError("couldn't find the products directory")
+        #else
+            return Bundle.main.bundleURL
+        #endif
+    }
+
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
@@ -30,18 +42,6 @@ final class monitorpanelTests: XCTestCase {
             let output = String(data: data, encoding: .utf8)
 
             XCTAssertEqual(output, "Hello, world!\n")
-        #endif
-    }
-
-    /// Returns path to the built products directory.
-    var productsDirectory: URL {
-        #if os(macOS)
-            for bundle in Bundle.allBundles where bundle.bundlePath.hasSuffix(".xctest") {
-                return bundle.bundleURL.deletingLastPathComponent()
-            }
-            fatalError("couldn't find the products directory")
-        #else
-            return Bundle.main.bundleURL
         #endif
     }
 }
